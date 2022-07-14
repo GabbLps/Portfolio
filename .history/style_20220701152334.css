@@ -1,0 +1,338 @@
+:root{
+    
+    /* --cor-de-fundo: #F5F5F5; 
+    --cor-de-fundo-secundaria: #EAF2FD;
+    --cor-de-link: #000;
+    --cor-de-titulos: #464646;
+    --cor-fundo-azul: #EAF2ED;
+    --cor-titulos-principais: #000;
+    --azul-botoes: #2A74E4; 
+    --cor-caixas: #FFF; */
+      
+    --cor-de-fundo: #121013;
+    --cor-de-fundo-secundaria: #33343a;
+    --cor-de-link: #FFCD38;
+    --cor-hover: #d37d0c;
+    --cor-de-titulos: #cac7c7;
+    --cor-fundo-azul: #EAF2ED;
+    --cor-titulos-principais: #fbfbfbe8;
+    --azul-botoes: #2A74E4; 
+    --cor-caixas: #33343a;
+
+    /* Cores legais
+    5e666d
+    33343a
+     */
+}
+
+html {
+    background-color: var(--cor-de-fundo);
+}
+
+body {
+    box-sizing: border-box;
+    background-color: var(--cor-de-fundo) ;
+    font-family: 'Raleway';
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+}
+
+ol, ul,li {
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: var(--cor-de-link);
+}
+a:hover{
+    color: var(--cor-hover);
+}
+
+/*Sessão Menu*/
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: flex-end;
+    height: 10vh;
+    width: auto;
+    margin: 0 153px;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+}
+
+.menu__title {
+    color: var(--cor-de-link);
+    text-shadow: 0px 0px 15px #FFF;
+}
+
+header section img {
+    margin-right: 13px;
+    user-select: none;
+}
+
+/* Sessão lista de navegação  */
+
+nav ul.menu__list {
+    display: flex;
+    justify-content: space-between;
+    width: 780px;
+    font-size: 16px;
+    text-decoration: underline;
+}
+
+/*Sessão Title*/
+
+div.title__div{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    align-content: center;
+    margin: 0 auto;
+}
+
+div.title__container{
+    width: 900px;
+}
+
+div.title__container h2{
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 65px;
+}
+
+section.title{
+    margin: 32px 0;
+}
+
+div h2.title__bio{
+    color: var(--cor-titulos-principais);
+}
+
+div h2.title__bio span {
+    text-shadow: 0px 0px 30px var(--cor-de-link);
+}
+
+.title__subsection {
+    font-size: 22px;
+    color: var(--cor-de-titulos);
+    font-weight: 400;
+    line-height: 22px;
+}
+
+.title__profile{
+    width: 368px;
+    height: 368px;
+    border-radius: 50%;
+    border: solid 3px var(--cor-de-link);
+    box-shadow: 0px 0px 12px 5px var(--cor-de-link);
+    transition: 0.3s;
+}
+
+ul.title__social__media{
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+    padding: 0;
+    font-weight: 500;
+}
+
+ul li.title__social__media__item{
+    font-size: 16px;
+    font-weight: 500;
+}
+
+/* Sessão about */
+
+section.about{
+    width: auto;
+    height: 383px;
+    background-color: var(--cor-de-fundo-secundaria);
+    color: var(--cor-de-titulos);
+    padding-top: 20px;
+    padding-left: 150px;
+}
+
+/* Container sessão about me */
+
+div.about__container{
+    max-width: 920px;
+}
+
+.about__title {
+    color: var(--cor-titulos-principais);
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.about__paragraph{
+    font-size: 16px;
+    line-height: 16px;
+    font-weight: 400;
+    margin-bottom: 32px;
+}
+
+/* Sessão skills e hobbies */
+
+section.hobbies {
+    padding: 32px;
+    padding-bottom: 100px;
+}
+
+/* TITULOS  */
+
+.skills__title, .hobbies__title, .academic__title ,.projects__title{
+    text-align: center;
+    font-size: 32px;
+    line-height: 37px;
+    font-weight: 700;
+    color: var(--cor-fundo-azul);
+    margin-top: 32px;
+}
+
+div.skills__content, div.hobbies__content{
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+div.skills__caixa, div.hobbies__caixa{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    width: 176px;
+    height: 174px;
+    border-radius: 5px 20px;
+    background-color: var(--cor-caixas);
+    background-color: var(--cor-de-fundo-secundaria);
+    font-weight: bold;
+    padding: 0;
+}
+
+section.skills div ul, section.hobbies div ul{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin: 0;
+    padding-left: 25px;
+    padding-bottom: 22px;
+}
+
+.skills__name, .hobbies__name{
+    color: var(--cor-titulos-principais);
+}
+
+ /* Icones skills */
+
+ .gitehub{
+    display: flex;
+    justify-content: space-between;
+ }
+.github{
+    width: 32px;
+ }
+
+/* Icones hobbies */
+.hobbies__img img{
+    width: 32px;
+}
+
+
+/* Sessão acadêmica */
+
+.academic__container h3{
+    margin-top: 0;
+}
+
+.academic__container{
+    padding-top: 32px;
+    padding-bottom: 80px;
+    background-color: var(--cor-de-fundo-secundaria);
+}
+
+.academic .academic__title{
+    text-align: center;
+    font-size: 32px;
+    line-height: 37px;
+    font-weight: 700;
+    color: var(--cor-fundo-azul);
+}
+
+.academic__content ul{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    text-align: left;
+}
+
+.academic__item__img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 300px;
+    margin-bottom: 8px;
+    border-radius: 25px 7px;
+    background-color: var(--cor-fundo-azul);
+}
+
+.academic__item__img img {
+    width: 262px;
+    height: 60px;
+    margin-left: 37px;
+}
+
+.academic__item__info{
+    color: var(--cor-fundo-azul);
+    line-height: 22px;
+}
+
+.academic__item__info h3{
+    margin: 0;
+}
+
+.academic__item__info span{
+    color: var(--cor-de-titulos);
+}
+
+/* Experiência Profissional */
+
+.projects__title{
+    margin-top: 0;
+    display: block;
+}
+
+.projects__container{
+    display: flex;
+    justify-content: center;
+}
+
+.projects__content {
+    margin-bottom: 64px;
+    display: flex;
+    gap: 20px;
+}
+
+.project__item{
+    width: auto;
+}
+
+.project__item img{
+    width: 50%;
+    height: auto;
+}
+
+.project__info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: var(--cor-fundo-azul);
+}

@@ -1,0 +1,56 @@
+:root{
+    --cor-de-fundo: #F5F5F5;
+    --cor-de-link: #000;
+    --cor-de-titulos: #464646;
+    --cor-fundo-azul: #EAF2ED;
+    --cor-caixas: #FBFBFB;
+    --azul-botoes: #2A74E4;
+}
+
+html {
+    background-color: var(--cor-de-fundo);
+}
+
+body {
+    box-sizing: border-box;
+    background-color: var(--cor-de-fundo) ;
+    font-family: 'Raleway';
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+}
+
+.vector__menu {
+    width: 75px;
+}
+
+ol, ul,li {
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: var(--cor-de-link);
+}
+
+/*Sessão Menu*/
+
+section.menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: flex-end;
+    height: 10vh;
+    margin: 0 153px;
+}
+
+section header {
+    display: flex;
+    align-items: center;
+}
+
+.menu__list {
+    display: flex;
+    justify-content: space-between;
+    width: 100vw;
+}
