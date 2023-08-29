@@ -182,7 +182,7 @@ section.about{
 /* Container sessão about me */
 
 div.about__container{
-    max-width: 920px;
+    max-width: 1060px;
 }
 
 .about__title {
@@ -267,7 +267,7 @@ section.skills div ul, section.hobbies div ul{
  }
 
 /* Icones hobbies */
-.hobbies__img img{
+.hobbies__img img {
     width: 32px;
 }
 
@@ -327,6 +327,10 @@ section.skills div ul, section.hobbies div ul{
 
 .academic__item__info span{
     color: var(--cor-de-titulos);
+}
+
+.img__java img, .img__spring img {
+    width: 38px;
 }
 
 /* Experiência Profissional */
